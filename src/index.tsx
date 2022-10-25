@@ -852,7 +852,7 @@ export default forwardRef<ActionSheetRef, ActionSheetProps>(
                 onDeviceLayoutReset.current.timer = setTimeout(() => {
                   internalEventManager.publish('safeAreaLayout');
                   safeAreaPaddingTop.current = height;
-                }, 64);
+                }, 0);
               }
             }}
             style={{
